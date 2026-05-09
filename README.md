@@ -3,7 +3,7 @@
 An AI-powered agent built from scratch. Uses Groq + LLaMA3 for decision making with real API integrations.
 
 ## Live API
-https://your-railway-url.railway.app/docs
+https://ai-agent-assistant-production.up.railway.app/
 
 ## Features
 - LLM-powered tool routing (Groq + LLaMA3)
