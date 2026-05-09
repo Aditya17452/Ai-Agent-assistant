@@ -1,8 +1,14 @@
 import os 
 from groq import Groq 
-from dotenv import load_dotenv 
-load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+from dotenv import load_dotenv
+
+load_dotenv()  # local ke liye — Railway pe ignore hoga automatically
+
+api_key = os.getenv("GROQ_API_KEY")
+print(f"API Key found: {bool(api_key)}")  # debug — True ya False print hoga
+
+client = Groq(api_key=api_key)
 
 # Minimal fix: correct the malformed chat initialization (syntax error)
 chat = [{
